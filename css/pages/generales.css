@@ -15,6 +15,19 @@
   gap: 0px;
 }
 
+@media (max-width: 992px) {
+  .btn-votacion {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn-votacion {
+    grid-template-columns: 1fr;
+  }
+}
+
 #filtrar svg {
   width: 12px;
   height: 12px;
@@ -62,7 +75,15 @@ button:hover {
 
 }
 
+@media (max-width: 768px) {
 
+  .mesa-comp,
+  .electores,
+  .escrutado {
+    margin: 10px;
+    padding: 10px;
+  }
+}
 
 #filtrar {
   border-radius: 30px;
@@ -121,6 +142,12 @@ button:hover {
   display: flex;
   min-width: auto;
   height: 450px;
+}
+
+@media (max-width: 768px) {
+  .cuadros {
+    height: auto;
+  }
 }
 
 .cuadro-Agrupaciones {
@@ -364,9 +391,17 @@ main {
   margin-right: 100px;
 }
 
+@media (max-width: 768px) {
+  main {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
 svg {
   height: 200px;
   width: 300px;
+  max-width: 100%;
 }
 
 #btn-generales {
@@ -377,22 +412,22 @@ svg {
 @media (max-width:1200px) {
   .cuadros {
     flex-direction: column;
-
+    height: auto;
   }
 
   .cuadro-Agrupaciones {
     flex: 2;
+    min-height: 300px;
   }
 
   .cuadro-Mapa {
     flex: 2;
+    min-height: 300px;
   }
 
   .cuadro-Resumen {
-
     flex: 2;
     min-height: 500px;
-
   }
 }
 
